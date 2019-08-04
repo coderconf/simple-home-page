@@ -95,66 +95,35 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+.coderconf {
+  background: #3987a2;
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #3987a2), color-stop(46%, #3987a2), color-stop(73%, #3d9bbd), color-stop(100%, #6bcff5));
+  background: linear-gradient(to bottom, #3987a2 0%, #3987a2 46%, #3d9bbd 73%, #6bcff5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3987a2', endColorstr='#6bcff5', GradientType=0 ); }
+.coderconf:after {
+  background: url(../img/coderconf.png) top center no-repeat;
+  background-size: auto 100%;
+  content: " ";
+  display: block;
+  min-height: 100vh;
+}
 
-section {
+
+
+.social-menu {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
+  bottom: 0;
   width: 100%;
+  text-align: center;
 }
 
-header {
-  font-family: 'Merienda', cursive;
-}
-
-h1 {
-  font-size: 2em;
-  font-weight: normal;
-  margin: 0.2em 0;
-}
-
-h2 {
-  font-size: 1.2em;
-  font-weight: normal;
-  margin: 0;
-}
-
-#dynamic-description {
-  display: none;
-}
-
-.txt-rotate > .wrap {
-  border-right: 0.04em solid #666;
-}
-
-/*.txt-rotate:after {
-  content: "|";
-  animation: blink .5s step-end infinite alternate;
-  color: #ff6700;
-}
-@keyframes blink {
-  50% {
-    color: #0173ff;
-  }
-}
-@-webkit-keyframes blink {
-  50% {
-    color: #fff;
-  }
-}*/
-
-
-nav ul {
+.social-menu ul {
   list-style-type: none;
   padding: 0;
   overflow: hidden;
 }
 
-nav ul li {
+.social-menu ul li {
   display: inline-block;
   padding: 0;
   margin: 0;
@@ -165,30 +134,19 @@ nav ul li {
   margin: 0 0.4em;
 }
 
+
 .social-links i {
   font-size: 1em;
-  /*border-radius: 30px;*/
   border-radius: 5px;
-  color: #fff;
-  background-color: #555;
   padding: 0.3em;
   line-height: 300%;
+  color: #fff;
+  background-color: #1f9bc3;
 }
-.social-links:hover i {
-  background-color: #222;
+.social-links i:hover {
+  color: #115162;
+  background-color: #6fcdf3;
 }
-
-.resume {
-  font-family: 'Merienda', cursive;
-}
-.resume a {
-  text-decoration: none;
-  color: #0087ff;
-}
-.resume a:hover {
-  color: #000000;
-}
-
 
 /* ==========================================================================
    Helper classes
@@ -289,7 +247,7 @@ nav ul li {
   }
 
   .social-links i {
-    font-size: 1.6em;
+    font-size: 1.3em;
   }
 
 }
